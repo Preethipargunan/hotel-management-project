@@ -1,0 +1,69 @@
+h1{
+    background:green;
+    text-align: center;
+    color: white;
+}
+nav{
+    width:auto;
+    background: black;
+    overflow: auto;
+    font-size: large;
+    height: max-content;
+}
+
+
+
+.active{
+    background-color:gold;
+    }
+    li:hover
+{
+background-color:yellow;
+color:white;
+font-weight:bold;
+}
+#log{
+    float:right;
+    padding-right:10px;
+    padding-left:10px;
+    }
+    #au{
+        float:right;
+        padding-right:10px;
+        padding-left:10px;
+        }
+        #vr{
+            float:right;
+            padding-right:10px;
+    padding-left:10px;
+            }
+            #gal{
+                float:right;
+                padding-right:10px;
+                padding-left:10px;
+                }
+                #con{
+                    float:right;
+                    padding-right:10px;
+                    padding-left:10px;
+                    }
+    #admin{
+        float:right;
+        padding-right:10px;
+    padding-left:10px;
+        }
+        #reg{
+            float:right;
+            padding-right:10px;
+            padding-left:10px;
+            }
+            /* #book{
+                float:right;
+                padding-right:10px;
+                padding-left:10px;
+                }
+                #pro{
+                    float:right;
+                    padding-right:10px;
+                    padding-left:10px;
+                    } */

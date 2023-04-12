@@ -1,0 +1,28 @@
+.background{
+    width:100%;
+    height:100vh;
+    background-image: url('../../assets/employee.png');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+}
+.left{
+    display:block;
+    
+    width:50%;
+}
+h1{
+    
+    text-align: center;
+    color: gold;
+}
+h2{
+ 
+    text-align: center;
+    color: lightsalmon;
+}
+h3{
+ 
+    text-align: center;
+    color: lawngreen;
+}

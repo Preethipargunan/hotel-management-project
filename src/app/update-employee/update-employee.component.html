@@ -1,0 +1,28 @@
+<div class="background">
+    <h1>
+        <br>
+    </h1>
+<div class="col-md-6 offset-md-3">
+    <h3>UPDATE EMPLOYEE</h3>
+    <form (ngSubmit) = "onSubmit()">
+        <div class="form-group">
+            <label>EmployeeName</label>
+            <input type="text" style="background-color: lightslategray;" class="form-control" id="employeename"
+            [(ngModel)] ="employee.empName" name="employeename">
+
+        </div>
+        <div class="form-group">
+            <label>phoneNo</label>
+            <input type="text"  style="background-color: lightslategray;"class="form-control" id="phoneno"
+            [(ngModel)] ="employee.phoneNo" name="phoneno">
+            
+        </div>
+        <div class="form-group">
+            <label>Address</label>
+            <input type="text" style="background-color: lightslategray;" class="form-control" id="address"
+            [(ngModel)] ="employee.address" name="address">
+            
+        </div>
+        <button class="btn btn-success" type="submit">Enter</button>
+    </form>
+</div>

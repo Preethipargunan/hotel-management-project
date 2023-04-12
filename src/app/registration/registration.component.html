@@ -1,0 +1,32 @@
+
+<body>
+    
+    <div class="background">
+    <h1><br></h1>
+    <img  src="./assets/userreg.png" height="100" width="100" class="center" >
+    
+
+<div class="container col-md-6">
+    <h2 >REGISTER USER</h2>
+   <form (ngSubmit)= "userRegister()">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">EmailId</label>
+            <input type="text" style="background-color: lightpink;" class="form-control" id="emailId" name="emailId" [(ngModel)]= "user.emailId">
+
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">userName</label>
+            <input type="text" style="background-color: lightpink;" class="form-control" id="userName" name="userName" [(ngModel)]= "user.userName">
+
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">password</label>
+            <input type="password" style="background-color: lightpink;" class="form-control" id="password" name="password" [(ngModel)]= "user.password">
+
+        </div>
+        <button type="submit" class="btn btn-primary">Register</button>
+    </form>
+  <!-- <small (click)= "">New User ?  RegisterHere</small>-->
+</div>
+
+

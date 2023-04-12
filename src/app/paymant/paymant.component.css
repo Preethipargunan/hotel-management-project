@@ -1,0 +1,23 @@
+h1{
+    
+    text-align: center;
+    color: navy;
+}
+.center-text{
+    text-align: center;
+    display:block;
+}
+.center{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+   
+}
+.background{
+    width:100%;
+    height:100vh;
+    background-image: url('../../assets/img26.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+}

@@ -1,0 +1,51 @@
+<div class="background">
+
+<div class="col-md-6 offset-md-3">
+    
+    <form (ngSubmit) = "onSubmit()">
+        <div class="form-group">
+            <label>customerNumber</label>
+            <input type="text" style="background-color: orchid" class="form-control" id="name"
+            [(ngModel)] ="profile.customerName" name="name">
+
+        </div>
+        <div class="form-group">
+            <label>contactNumber</label>
+            <input type="text" style="background-color: orchid" class="form-control" id="contactNumber"
+            [(ngModel)] ="profile.contactNumber" name="contactNumber">
+            
+        </div>
+        <div class="form-group">
+            <label>firstName</label>
+            <input type="text"  style="background-color: orchid" class="form-control" id="firstName"
+            [(ngModel)] ="profile.firstName" name="firstName">
+            
+        </div>
+        <div class="form-group">
+            <label>lastName</label>
+            <input type="text" style="background-color: orchid" class="form-control" id="lastName"
+            [(ngModel)] ="profile.lastName" name="lastName">
+            
+        </div>
+        <div class="form-group">
+            <label>Email</label>
+            <input type="text" style="background-color: orchid" class="form-control" id="emailId"
+            [(ngModel)] ="profile.emailId" name="emailId">
+            
+        </div>
+        <div class="form-group">
+            <label>Age</label>
+            <input type="text" style="background-color: orchid" class="form-control" id="age"
+            [(ngModel)] ="profile.age" name="age">
+            
+        </div>
+        <div class="form-group">
+            <label>DOB</label>
+            <input type="text"  style="background-color: orchid" class="form-control" id="dob"
+            [(ngModel)] ="profile.dob" name="dob">
+            
+        </div>
+        <button class="btn btn-success" type="submit">submit</button>
+    </form>
+</div>
+

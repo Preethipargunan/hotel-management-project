@@ -1,0 +1,25 @@
+<div class="background">
+<h2 id="a">EMPLOYEE LIST</h2>
+<table class="table table-striped">
+    
+        <tr style="background-color: darkgrey;">
+            <th>EmployeeName</th>
+            <th>phoneNo</th>
+            <th>Address</th>
+            <th>Action</th>
+            
+        </tr>
+   
+    <tbody>
+        <tr *ngFor="let employee of employees">
+            <td style="background-color: lightgreen;">{{employee.empName}}</td>
+            <td style="background-color: lightgreen;">{{employee.phoneNo}}</td>
+            <td style="background-color: lightgreen;">{{employee.address}}</td>
+            <td>
+                <button (click)= "updateEmployee(employee.employeeId)" class="btn btn-info">Update</button>
+                <button (click)= "deleteEmployee(employee.employeeId)" class="btn btn-danger" Style="margin-left: 10px">Delete</button>
+                <button (click)= "EmployeeDetails(employee.employeeId)" class="btn btn-info" Style="margin-left: 10px">View</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

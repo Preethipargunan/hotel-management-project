@@ -1,0 +1,51 @@
+<body>
+    
+    <div class="background">
+        <h1><br></h1>
+    <img  src="./assets/booknow2.png" height="100" width="100" class="center" >
+    
+<div class="col-md-6 offset-md-3">
+    <h3>BOOKROOM</h3>
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label>CustomerName</label>
+            <input type="text" style="background-color: lightgreen;" class="form-control" id="customerName"
+            [(ngModel)]= "book.customerName" name="customerName">
+        </div>
+        <div class="form-group">
+            <label>PhoneNumber</label>
+            <input type="text" style="background-color: lightgreen;" class="form-control" id="phoneNo"
+            [(ngModel)]= "book.phoneNo" name="phoneNo">
+        </div>
+        <div class="form-group">
+            <label>Address</label>
+            <input type="text" style="background-color: lightgreen;" class="form-control" id="address"
+            [(ngModel)]="book.address" name="address">
+        </div>
+        <div class="form-group">
+            <label>ChechIn</label>
+            <input type="text" style="background-color: lightgreen;" class="form-control" id="checkIn"
+            [(ngModel)]="book.checkIn" name="checkIn">
+        </div>
+        <div class="form-group">
+            <label>CheckOut</label>
+            <input type="text" style="background-color: lightgreen;" class="form-control" id="checkOut"
+            [(ngModel)]="book.checkOut" name="checkOut">
+        </div>
+        <div class="form-group">
+            <label>TotalRoom</label>
+            <input type="text" style="background-color: lightgreen;" class="form-control" id="totalroom"
+            [(ngModel)]="book.totalRoom" name="totalRoom">
+        </div>
+        <div class="form-group">
+            <label>TotalDay</label>
+            <input type="text" style="background-color: lightgreen;" class="form-control" id="totalday"
+            [(ngModel)]="book.totalDay" name="totalDay">
+        </div>
+        
+        <button class="btn btn-success"  type="Submit">Book</button>
+
+        <button class="btn btn-success" (click)= "onpaymentClick()" type="Submit">PayNow</button>
+        <button class="btn btn-success" (click)= "onCancelClick()" type="Submit">cancel</button>
+    </form>
+</div>

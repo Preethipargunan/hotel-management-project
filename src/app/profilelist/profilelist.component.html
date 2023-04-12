@@ -1,0 +1,36 @@
+<div class="background">
+<table class="table table-striped">
+    
+        <tr style="background-color: cyan;">
+            <th>CustomerNumber</th>
+            <th>contactNumber</th>
+            <th>Email</th>
+            <th>firstName</th>
+            <th>lastName</th>
+            <th>Address</th>
+            <th>Age</th>
+            <th>DOB</th>
+            <th>Action</th>
+            
+        </tr>
+   
+    <tbody>
+        
+        <tr *ngFor="let profile of profiles">
+            <td style="background-color: lightpink;">{{profile.customerName}}</td>
+            <td style="background-color: lightpink;">{{profile.contactNumber}}</td>
+            <td style="background-color: lightpink;">{{profile.firstName}}</td>
+            <td style="background-color: lightpink;">{{profile.lastName}}</td>
+            <td style="background-color: lightpink;">{{profile.emailId}}</td>
+            <td style="background-color: lightpink;">{{profile.address}}</td>
+            <td style="background-color: lightpink;">{{profile.age}}</td>
+            <td style="background-color: lightpink;">{{profile.dob}}</td>
+            <td>
+                <button (click)= "updateProfile(profile.customerId)" class="btn btn-info">Update</button>
+
+                <!--<button (click)= "ProfileDetails(profile.customerId)" class="btn btn-info" Style="margin-left: 10px">View</button>-->
+          </td>
+        </tr>
+    </tbody>
+</table>
+

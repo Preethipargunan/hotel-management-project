@@ -1,0 +1,22 @@
+nav{
+    width:auto;
+    background: black;
+    overflow: auto;
+    font-size: large;
+    height: max-content;
+}
+.active{
+    background-color:gold;
+    }
+    #au{
+        float:right;
+        padding-right:10px;
+        padding-left:10px;
+        }
+        li:hover
+        {
+        background-color:yellow;
+        color:white;
+        font-weight:bold;
+        }
+        

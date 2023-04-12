@@ -1,0 +1,21 @@
+<div class="background">
+<h2 id="a">ROOM LIST</h2>
+<table class="table table-striped">
+    
+        <tr style="background-color: darkolivegreen">
+            <th>Room Type</th>
+            <th>Room Status</th>
+            <th>Room Price</th>
+            
+            
+        </tr>
+   
+    <tbody>
+        <tr *ngFor="let room of rooms">
+            <td style="background-color: orchid">{{room.roomtype}}</td>
+            <td style="background-color: orchid">{{room.roomStatus}}</td>
+            <td style="background-color: orchid">{{room.roomPrice}}</td>
+           
+        </tr>
+    </tbody>
+</table>

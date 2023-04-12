@@ -1,0 +1,27 @@
+
+<body>
+    
+    <div class="background">
+        <h1><br></h1>
+    <img  src="./assets/user.png" height="100" width="100" class="center" >
+
+<div class="container col-md-6">
+    <h2  >USER LOGIN</h2>
+   
+    <form (ngSubmit) = "userLogin()">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">EmailId</label>
+            <input type="text" style="background-color: lightsalmon;" [(ngModel)]= "user.emailId" class="form-control" id="emailId" name="emailId">
+
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">password</label>
+            <input type="password" style="background-color: lightsalmon;" [(ngModel)]= "user.password" class="form-control" id="password" name="password">
+
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+    </form>
+</div>
+
+
+

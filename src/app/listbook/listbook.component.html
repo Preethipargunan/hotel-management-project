@@ -1,0 +1,32 @@
+<div class="background">
+<h2 id="a">BOOKING LIST</h2>
+<table class="table table-striped" >
+   <tr style="background-color: blanchedalmond;">
+    <th>CustomerName</th>
+    <th>PhoneNumber</th>
+     <th>Address</th>
+     <th> CheckIn</th>
+     <th>CheckOut</th>
+     <th> TotalRoom</th>
+     <th> TotalDay</th>
+     <th>Action</th>
+     </tr>
+     <tbody>
+        <tr *ngFor="let book of books">
+         
+            <td style="background-color: lightsalmon;">{{book.customerName}}</td>
+            <td style="background-color: lightsalmon;">{{book.phoneNo}}</td>
+            <td style="background-color: lightsalmon;">{{book.address}}</td>
+            <td style="background-color: lightsalmon;">{{book.checkIn}}</td>
+            <td style="background-color: lightsalmon;">{{book.checkOut}}</td>
+            <td style="background-color: lightsalmon;">{{book.totalRoom}}</td>
+            <td style="background-color: lightsalmon;">{{book.totalDay}}</td>
+         
+             <td> 
+                <button (click)="deleteBook(book.bookingId)" class="btn btn-danger" Style="margin-left: 10px">Cancel</button>
+               <!--<button (click)="BookDetails(book.bookingId)" class="btn btn-info" Style="margin-left: 10px">View</button>-->
+            </td>
+        </tr>
+     </tbody>
+  
+</table>

@@ -1,0 +1,17 @@
+body{
+    background-color: wheat;
+   
+}
+h2{
+    background:pink;
+    text-align: center;
+    color:brown;
+}
+img{
+    vertical-align: text-bottom;
+}
+h1{
+    background:black;
+    text-align: center;
+    color: orangered;
+}

@@ -1,0 +1,26 @@
+<body>
+    
+    <div class="background">
+        <h1><br></h1>
+    <img  src="./assets/empreg.jpg" height="100" width="100" class="center" >
+<div class="col-md-6 offset-md-3">
+    <h3>ADD ROOM</h3>
+    <form (ngSubmit)= "onSubmit()">
+        <div class="form-group">
+            <label>Room Type</label>
+            <input type="text" style="background-color: lightslategray;" class="form-control" id="roomtype"
+            [(ngModel)]= "room.roomtype" name="roomtype">
+        </div>
+        <div class="form-group">
+            <label>Room Status</label>
+            <input type="text" style="background-color: lightslategray;" class="form-control" id="roomStatus"
+            [(ngModel)]= "room.roomStatus" name="roomStatus">
+        </div>
+        <div class="form-group">
+            <label>Room Price</label>
+            <input type="text" style="background-color: lightslategray;" class="form-control" id="roomPrice"
+            [(ngModel)]="room.roomPrice" name="roomPrice">
+        </div>
+        <button class="btn btn-success" type="Submit">Add</button>
+    </form>
+</div>
